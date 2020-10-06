@@ -1,12 +1,12 @@
 :root{
-  --mainBlue:#2a2a72;
-  --lightBlue:#0098ffd;
+  --mainPink:#c62a88;
+  --lightPink:#ffa5a5;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
-  --mainYellow: #ffa400;
+  --mainPurple: #a37eba;
 }
 body{
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Oswald" sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
@@ -17,9 +17,9 @@ body{
 }
 
 .text-blue{
-  color: var(--mainBlue);
+  color: var(--mainPink);
 }
 
 .text-bright{
-  color: var(--lightBlue);
+  color: var(--lightPink);
 }
