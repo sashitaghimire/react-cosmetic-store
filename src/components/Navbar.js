@@ -40,6 +40,10 @@ export default Navbar;
 
 const NavWrapper = styled.nav`
 background:var(--mainPink);
+position:sticky;
+top:0;
+left:0;
+z-index:100;
 .nav-link{
     color:var(--mainWhite)!important;
     font-size: 1.3rem;
