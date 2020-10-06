@@ -1,6 +1,6 @@
 :root{
-  --mainPink:#c62a88;
-  --lightPink:#ffa5a5;
+  --mainPink:#d7385e;
+  --lightPink:#fcdada;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainPurple: #a37eba;
@@ -16,7 +16,7 @@ body{
   text-transform: uppercase;
 }
 
-.text-blue{
+.text-pink{
   color: var(--mainPink);
 }
 

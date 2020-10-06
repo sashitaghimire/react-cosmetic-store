@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Default() {
-    return (
-        <div>
-            default
-        </div>
-    )
+export default class Default extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
-export default Default;

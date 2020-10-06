@@ -1,14 +1,28 @@
-import React from 'react';
-import Products from './Products';
+import React, { Component } from 'react'
+import Title from './Title';
 
- function ProductList() {
-   
+ class ProductList extends Component {
+    state={
+        products:[]
+       };
+    render() {
         return (
-            <div>
-                <Products />
+            <React.Fragment>
+                <div className="py-5">
+                <div className="conatiner">
+                    <Title name="Our" title="Products"/>
+                    <div className="row">
+
+
+                </div>
+                </div>
                 
             </div>
-        )
+            </React.Fragment>
+        );
     }
+}
+
+ 
 
 export default ProductList;
