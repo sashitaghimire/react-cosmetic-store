@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {ProductConsumer} from '../context';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import PropTypes from 'prop-types';
+
  class Products extends Component {
     render() {
         const{id,title,img,price,inCart} = this.props.product;
@@ -11,7 +12,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
                <div className="card">
                    <div className="img-container p-5" onClick={()=>console.log('you clicked')}>
                         <Link to="/details">
-                            <img src={img} alt="product image" className="card-img-top " />
+                            <img src={img} alt="product_image" className="card-img-top " />
                         </Link>
                         <button className="cart-btn" 
                         disabled={inCart ? true : false} 
@@ -39,6 +40,16 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
            </ProductWrapper>
         )
     }
+}
+
+ProductConsumer.propTypes = {
+    product:PropTypes.shape({
+        id:PropTypes.number,
+        img:PropTypes.string,
+        title:PropTypes.string,
+        price:PropTypes.number,
+        inCart:PropTypes.bool
+    }).isRequired
 }
 
 const ProductWrapper = styled.div`

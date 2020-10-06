@@ -12,7 +12,7 @@ export const storeProducts = [
     price: 30,
     company: "horex",
     info:
-      "Customized Necklace",
+      "Our Personalized Cursive Name Necklace in Sterling Silver offers lots of exciting features to love, including a specially designed script alphabet that lets you include some unique characters including hashtags, ampersands, dollar signs, and more. Simply choose an inscription containing up to nine characters, and our skilled artisans will handle all the little details, creating a customized name chain that you’ll be proud to wear or share with others.",
     inCart: false,
     count: 0,
     total: 0
@@ -163,7 +163,7 @@ export const detailProduct = {
   price: 30,
   company: "horex",
   info:
-    "Customized Necklace",
+    "Our Personalized Cursive Name Necklace in Sterling Silver offers lots of exciting features to love, including a specially designed script alphabet that lets you include some unique characters including hashtags, ampersands, dollar signs, and more. Simply choose an inscription containing up to nine characters, and our skilled artisans will handle all the little details, creating a customized name chain that you’ll be proud to wear or share with others.",
   inCart: false,
   count: 0,
   total: 0
