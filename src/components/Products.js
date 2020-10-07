@@ -21,6 +21,7 @@ import PropTypes from 'prop-types';
                            disabled={inCart ? true : false} 
                            onClick={()=>{
                                value.addToCart(id);
+                               value.openModal(id);
                            }}>
                                {inCart?(
                                <p class="text-capitalize mb-0" disabled> in cart
