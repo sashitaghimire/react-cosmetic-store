@@ -22,9 +22,9 @@ export const storeProducts = [
     title: "Sun Screen  ",
     img: "img/cream.jpg",
     price: 50,
-    company: "horex",
+    company: "EveryDay Human",
     info:
-      "Keeps our face soft,long-lasting sun protection",
+      "SPF-50, ultra matte look, even skin tone, skin soothing and reparing, free  from harmful chemcial, natural nutrition, no side effects,keeps our face soft,long-lasting sun protection",
     inCart: false,
     count: 0,
     total: 0
@@ -34,9 +34,9 @@ export const storeProducts = [
     title: "Ring ",
     img: "img/ring.jpg",
     price: 240,
-    company: "Apperal",
+    company: "OUXI",
     info:
-      "Engament Ring",
+      "Attractive and Stylish, durable and light weight, comes with a jewellery zipper bag. Ouxi is a fashion brand owned by French Ouxi group holding Co which is the world's leading enterprise that speicializes in high-end jewellery.",
     inCart: false,
     count: 0,
     total: 0
@@ -46,9 +46,9 @@ export const storeProducts = [
     title: "Ear Ring ",
     img: "img/earring.jpg",
     price: 28,
-    company: "horex",
+    company: "Apparel",
     info:
-      "",
+      "Instanlty add a splashof chic to your ensemble with this classy jewellery set. Match it with a heavysaree or a party gown for your next function or a party.",
     inCart: false,
     count: 0,
     total: 0
@@ -61,7 +61,7 @@ export const storeProducts = [
     price: 100,
     company: "Cosmetic Mockup",
     info:
-      "Buy lipstick, concealer, kajal, blush & other make up items from Comestic Mockup",
+      "Products exactly shown in the picture. Equally useful for Begineers and Experts.Buy lipstick, concealer, kajal, blush & other make up items from Comestic Mockup",
     inCart: false,
     count: 0,
     total: 0
@@ -95,9 +95,9 @@ export const storeProducts = [
     title: "Nail Polish",
     img: "img/nailpolish.jpg",
     price: 18,
-    company: "htc",
+    company: "Farmasi",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Farmasim easy to apply and the soft brush provides easy application.Dry out easily and durable.",
     inCart: false,
     count: 0,
     total: 0
@@ -135,7 +135,7 @@ export const storeProducts = [
     price: 80,
     company: "channel paris",
     info:
-      "Intense Matte Lipstick by Sacha Cosmetics, Best Matte Moisturizing Long Lasting Lip Stick, Color Intense Makeup for All Skin Tones, 0.15 oz, Wicked",
+      "Elegant fragnance, a perfume begins in the classic period of the Channel Paris.Create entirely memories with our winter scents with a modern twist. ",
     inCart: false,
     count: 0,
     total: 0
