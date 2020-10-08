@@ -12,9 +12,12 @@ const ProductContext  = React.createContext();
     state={
         products: [],
         detailProduct:detailProduct,
-        cart:[],
+        cart: [],
         modalOpen:false,
         modalProduct:detailProduct,
+        cartSubTotal:0,
+        cartTotal:0,
+        cartTax:0,
     };
 
     componentDidMount(){
@@ -59,7 +62,7 @@ getItem = (id)=>{
            return {products:tempProducts, cart:[...this.state.cart, product]};
        },
        ()=>{
-           
+           this.addTotals();
        });
     };
 
@@ -75,6 +78,38 @@ getItem = (id)=>{
             return {modalOpen:false};
         })
     };
+
+    increment = (id) =>{
+        console.log("increment method")
+    };
+    decrement = (id) =>{
+        console.log("increment method")
+    };
+
+    removeItem = (id) =>{
+        console.log('item removed');
+    };
+    clearCart = () =>{
+        console.log("cart was cleared")
+    };
+
+    addTotals = () =>{
+        let subTotal = 0;
+        this.state.cart.map(item => (subTotal += item.total));
+
+        const tempTax = subTotal * 0.13;
+
+        const tax = parseFloat(tempTax.toFixed(1));
+        const total = subTotal + tax;
+        this.setState(()=>{
+            return{
+                cartSubTotal:subTotal,
+                cartTax:tax,
+                cartTotal:total,
+            }
+        })
+    };
+
     render() {
         return (
             <ProductContext.Provider value={{
@@ -82,7 +117,11 @@ getItem = (id)=>{
                handleDetail:this.handleDetail,
                addToCart:this.addToCart,
                openModal:this.openModal,
-               closeModal:this.closeModal
+               closeModal:this.closeModal,
+               increment: this.increment,
+               decrement: this.decrement,
+               removeItem: this.removeItem,
+               clearCart:this.clearCart,
 
             }}>
                 {this.props.children}

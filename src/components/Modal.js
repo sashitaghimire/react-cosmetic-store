@@ -58,7 +58,7 @@ export default class Modal extends Component {
 
 const ModalContainer = styled.div`
 position:fixed;
-top:1;
+top:0;
 left:0;
 right:0;
 bottom:0;
@@ -68,8 +68,11 @@ align-item:center;
 justify-content:center;
 
 
+
 #modal{
     background: var(--mainWhite);
+    top:120px;
+   
     
 }
 
